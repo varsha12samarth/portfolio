@@ -125,3 +125,15 @@ let letter = "";
   }
 
 })();
+// ================================
+// Mobile Menu
+// ================================
+
+const menu = document.querySelector(".menu-toggle");
+const nav = document.getElementById("navMenu");
+
+if (menu && nav) {
+    menu.addEventListener("click", () => {
+        nav.classList.toggle("active");
+    });
+}
